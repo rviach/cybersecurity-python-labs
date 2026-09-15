@@ -1,0 +1,20 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+
+# Ruff cache
+.ruff_cache/
+
+# Generated data files
+labs/**/data/*.csv
+labs/**/data/*.json
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/

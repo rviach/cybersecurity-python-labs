@@ -7,17 +7,14 @@ sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 )
 
-from labs.lab01 import task1, task2, task3  # noqa: E402
+from labs.lab01 import task1  # noqa: E402,F401
 
+print("\n" + "=" * 60 + "\n")
 
-def main():
-    """Послідовно запускає демонстрацію всіх трьох завдань лабораторної."""
-    task1.main()
-    print("\n" + "=" * 60 + "\n")
-    task2.main()
-    print("\n" + "=" * 60 + "\n")
-    task3.main()
+from labs.lab01 import task2  # noqa: E402,F401
 
+print("\n" + "=" * 60 + "\n")
 
-if __name__ == "__main__":
-    main()
+from labs.lab01 import task3  # noqa: E402
+
+task3.main()

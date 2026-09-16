@@ -115,17 +115,11 @@ def run_access_checks(user_directory, resource_list, blocked):
     return lines
 
 
-def main():
-    """Точка входу для демонстрації системи контролю доступу."""
-    print(f"Студент: {STUDENT_NAME} ({GROUP_NAME}), варіант {VARIANT_NUMBER}")
-    print("\nЗавдання 2: Система контролю доступу\n")
+print(f"Студент: {STUDENT_NAME} ({GROUP_NAME}), варіант {VARIANT_NUMBER}")
+print("\nЗавдання 2: Система контролю доступу\n")
 
-    print_resources(resources, security_levels)
+print_resources(resources, security_levels)
 
-    print("\nРезультати перевірки доступу:")
-    for line in run_access_checks(users, resources, blocked_users):
-        print(f"  {line}")
-
-
-if __name__ == "__main__":
-    main()
+print("\nРезультати перевірки доступу:")
+for line in run_access_checks(users, resources, blocked_users):
+    print(f"  {line}")

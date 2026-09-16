@@ -136,17 +136,9 @@ def print_report(results):
         )
 
 
-def main():
-    """Точка входу для демонстрації аналізатора надійності паролів."""
-    print(f"Студент: {STUDENT_NAME} ({GROUP_NAME}), варіант {VARIANT_NUMBER}")
-    print("\nЗавдання 1: Аналізатор надійності паролів\n")
+print(f"Студент: {STUDENT_NAME} ({GROUP_NAME}), варіант {VARIANT_NUMBER}")
+print("\nЗавдання 1: Аналізатор надійності паролів\n")
 
-    extended_passwords = simulate_password_reuse(passwords)
-    results = analyze_passwords(
-        extended_passwords, criteria, forbidden_passwords
-    )
-    print_report(results)
-
-
-if __name__ == "__main__":
-    main()
+extended_passwords = simulate_password_reuse(passwords)
+results = analyze_passwords(extended_passwords, criteria, forbidden_passwords)
+print_report(results)

@@ -7,7 +7,7 @@ sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 )
 
-from shared.student import (  # noqa: E402
+from shared.student import (
     GROUP_NAME,
     STUDENT_NAME,
     VARIANT_NUMBER,

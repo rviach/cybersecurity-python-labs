@@ -191,26 +191,17 @@ def demonstrate_authentication():
             print(f"  login('{username}') -> помилка: {exc}")
 
 
-def main():
-    """Точка входу для демонстрації реєстрації, зберігання та входу."""
-    print(f"Студент: {STUDENT_NAME} ({GROUP_NAME}), варіант {VARIANT_NUMBER}")
-    print(
-        f"\nЗавдання 3: Хешування ({HASH_ALGORITHM}), "
-        f"CSV-база, JSON-логування\n"
-    )
+print(f"Студент: {STUDENT_NAME} ({GROUP_NAME}), варіант {VARIANT_NUMBER}")
+print(
+    f"\nЗавдання 3: Хешування ({HASH_ALGORITHM}), CSV-база, JSON-логування\n"
+)
 
-    print("Реєстрація користувачів...")
-    created = create_users(users_to_register)
-    print(
-        f"  Успішно зареєстровано: {len(created)} з {len(users_to_register)}"
-    )
+print("Реєстрація користувачів...")
+created = create_users(users_to_register)
+print(f"  Успішно зареєстровано: {len(created)} з {len(users_to_register)}")
 
-    users_db = read_users_db()
-    print("\nВміст бази даних users.csv:")
-    print_users_db(users_db)
+users_db = read_users_db()
+print("\nВміст бази даних users.csv:")
+print_users_db(users_db)
 
-    demonstrate_authentication()
-
-
-if __name__ == "__main__":
-    main()
+demonstrate_authentication()

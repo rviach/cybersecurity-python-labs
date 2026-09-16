@@ -15,6 +15,4 @@ from labs.lab01 import task2  # noqa: E402,F401
 
 print("\n" + "=" * 60 + "\n")
 
-from labs.lab01 import task3  # noqa: E402
-
-task3.main()
+from labs.lab01 import task3  # noqa: E402,F401
